@@ -1,2 +1,2 @@
 # mods
-Modular media installation system
+Modular media art installation system
