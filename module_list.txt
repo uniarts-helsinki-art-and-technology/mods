@@ -1,0 +1,99 @@
+MODULES
+
+Sense (space)
+These modules work as the inputs for the system:
+
+    Sensor
+        Plug in sensor (5V), if needed translate from ananlog value to digital
+    Camera
+        detects body in image and trigger
+	tech: pi+picam+opencv 
+    Pulse
+        generate signal in regular interval
+        settings: set interval
+
+Transform (signal)
+These modules can be placed in-between the system:
+
+    Delay
+        waits until signal is sent forward
+        setting: delay time
+    Ramp
+        incremental increase from 0 to signal voltage (3.3/5/?), ramp time, sustain time
+        setting: ramp time, sustain time
+    Split
+        one-to-many
+        settings: none
+        power: no	
+    Logic
+        and, or, not
+        settings: switch select logic mode, button for "not"Boolean
+    Toggle
+        signal changes the state of the module, the output is the current state (2 in, 2 out)
+    Counter/Adder
+        counts signal triggers up to set limit
+        setting: count limit 
+    Random
+	set the number of options 
+    Smooth
+	smooths out the irregularities in analog input
+    Supervised
+	Supervised ML module, Train with selected combination of outputs, Play the trained model, Reset training
+	Based on Wekinator
+	
+
+Play (output)
+These modules can be used as outputs the system:
+
+    Video
+        video loop / video playback on trigger
+        settings: 
+    Sound
+        sound loop / video playback on trigger
+    DC Switch
+        on/off relay, eg for lights, electronics
+    AC Switch
+        on/off relay, eg for lights, electronics
+    Motor
+        run motor in selected direction and speed
+        settings: direction, speed
+        input: direction (bool), speed (int)
+
+Transmit (to elsewhere)
+These modules are also sort of outputs the system:
+
+    IR
+        sends IR signal, record the signal by pressing button, playback when trigger signal received
+        settings: button to record ir signal
+
+    IOT
+        sent trigger signal to cloud
+
+Convert
+These modules create link to other system:
+
+    Wifi/LAN
+        converts the signal to message and sends 0 or 1 to udp/osc
+
+    Midi?
+        eg. signal to note
+    DMX?
+        what's the output? where to use it? how to make it?
+
+
+
+
+
+
+CODE
+
+Python, microPython, circuitPython
+
+
+BOXES
+
+Try this awesome online tool:
+https://www.festi.info/boxes.py/
+
+POWERING
+?
