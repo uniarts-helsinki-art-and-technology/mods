@@ -1,0 +1,6 @@
+
+#ignore all files with a tilde
+*~
+
+#ignore all hidden files
+*.DS_
