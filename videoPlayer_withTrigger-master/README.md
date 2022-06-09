@@ -12,7 +12,7 @@ Riippuvuudet:
 
 Avaa Terminal ja siirry kansioon videoPlayer-master
 
-	$ cd /polku/kansioon/videoPlayer-master
+	$ cd /polku/kansioon/videoPlayer_withTrigger-master
 
 Asenna makella:
 
@@ -75,7 +75,7 @@ Dependencies:
 
 Download and go to the videoPlayer path
 	
-	$ cd /path/to/videoPlayer-master
+	$ cd /path/to/videoPlayer_withTrigger-master
 	
 Install with make:
 
