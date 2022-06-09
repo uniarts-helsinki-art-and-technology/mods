@@ -1,0 +1,14 @@
+[Unit]
+Description=Play Video With Trigger
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=lxterminal -e "/home/pi/Desktop/videoPlayer_withTrigger/playVideo_withTrigger.sh"
+Restart=always
+RestartSec=10s
+KillMode=process
+TimeoutSec=30
+
+[Install]
+WantedBy=default.target
