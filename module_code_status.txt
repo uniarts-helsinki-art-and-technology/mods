@@ -3,6 +3,7 @@ Module code status
 READY
 	Delay (for rpi pico) / Tuomo
 	Pulse (for rpi pico) / Tuomo
+	Sensor (for rpi pico) / Tuomo
 	Video (for rpi 3 & rpi 4) / Roberto
 	Gate: and (circuit) / Tuomo
 
@@ -12,7 +13,6 @@ WORK IN PROGRESS
 
 
 WAITING LIST
-	Sensor
 	DC switch
 	AC switch
 	Ramp
