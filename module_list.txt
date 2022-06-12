@@ -18,42 +18,57 @@ These modules can be placed in-between the system:
     Delay
         waits until signal is sent forward
         setting: delay time
+        	
     Ramp
         incremental increase from 0 to signal voltage (3.3/5/?), ramp time, sustain time
         setting: ramp time, sustain time
+
     Split
         one-to-many
         settings: none
-        power: no	
+        power: no
+
     Logic
         and, or, not
         settings: switch select logic mode, button for "not"Boolean
+
     Toggle
         signal changes the state of the module, the output is the current state (2 in, 2 out)
+
+    If...else
+        3 inputs: 1 for state control, 2 for data flow, 1 output
+	
     Counter/Adder
         counts signal triggers up to set limit
         setting: count limit 
+
     Random
 	set the number of options 
+
     Smooth
 	smooths out the irregularities in analog input
+	> can we implement this as optional functionality into sensor mod?
+
     Supervised
 	Supervised ML module, Train with selected combination of outputs, Play the trained model, Reset training
-	Based on Wekinator
 	
 
 Play (output)
 These modules can be used as outputs the system:
 
     Video
-        video loop / video playback on trigger
-        settings: 
+        video player on raspi with 2 modes: loop / video playback on trigger
+        settings: switch
     Sound
         sound loop / video playback on trigger
+    Slideshow
+	set of images displayed in alphabetic order, change image on trigger signal
     DC Switch
         on/off relay, eg for lights, electronics
     AC Switch
         on/off relay, eg for lights, electronics
+        connectors: CEE 7/4 Schuko, IEC C13 KOJELIITIN NAARAS (https://www.partco.fi/fi/saehkoetarvikkeet/iec-liittimet/9154-ac-r-jatko.html)
+        referance: https://www.verkkokauppa.com/fi/product/244850/Fuj-tech-Aviosys-9255-GE-etaohjattava-IP-pistorasia
     Motor
         run motor in selected direction and speed
         settings: direction, speed
@@ -65,6 +80,10 @@ These modules are also sort of outputs the system:
     IR
         sends IR signal, record the signal by pressing button, playback when trigger signal received
         settings: button to record ir signal
+        https://github.com/bartoszadamczyk/pico-ir
+    OSC
+	send message as osc over network
+	https://github.com/SpotlightKid/micropython-osc	
 
     IOT
         sent trigger signal to cloud
@@ -77,6 +96,7 @@ These modules create link to other system:
 
     Midi?
         eg. signal to note
+        https://github.com/cjbarnes18/micropython-midi
     DMX?
         what's the output? where to use it? how to make it?
 
@@ -88,6 +108,9 @@ These modules create link to other system:
 CODE
 
 Python, microPython, circuitPython
+Libs:
+async 
+https://github.com/peterhinch/micropython-async/blob/master/v3/docs/DRIVERS.md
 
 
 BOXES
