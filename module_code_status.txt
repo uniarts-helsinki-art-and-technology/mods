@@ -5,7 +5,7 @@ READY
 	Pulse (for rpi pico) / Tuomo
 	Sensor (for rpi pico) / Tuomo
 	Video (for rpi 3 & rpi 4) / Roberto
-	Gate: and (circuit) / Tuomo
+	Gate: and (circuit:ic) / Tuomo
 
 
 WORK IN PROGRESS
@@ -16,8 +16,8 @@ WAITING LIST
 	DC switch
 	AC switch
 	Ramp
-	Split
-	Gate: or
-	Toggle
-	If...else
+	Split (circuit)
+	Gate: or (circuit)
+	Toggle (circuit:ic)
+	If...else (circuit:relay)
 	camera
