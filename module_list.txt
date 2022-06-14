@@ -49,6 +49,14 @@ These modules can be placed in-between the system:
 	smooths out the irregularities in analog input
 	> can we implement this as optional functionality into sensor mod?
 
+    Multi
+	Multipurpose mod with various in-built functionalies, user selects the functionality from interface
+	
+
+    Matrix
+	Module that can do multiple things at the same time	
+    
+
     Supervised
 	Supervised ML module, Train with selected combination of outputs, Play the trained model, Reset training
 	
