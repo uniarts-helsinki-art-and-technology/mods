@@ -16,6 +16,7 @@ int sensor_input_state = 0;
 int sensor_input_value = 0;
 int sensor_threshold = 512;
 const int sensor_threshold_margin = 5;
+bool signal_detected = false;
 
 
 pt ptDigitalIn;
@@ -29,6 +30,11 @@ int digitalIn(struct pt* pt) {
   {
     button_input_state = digitalRead(DIGITAL_SIGNAL_PIN_2);
     sensor_input_state = digitalRead(DIGITAL_SIGNAL_PIN_3);
+    Serial.println(sensor_input_state);
+    if((sensor_input_state == 1 || button_input_state == 1) && signal_detected==false)
+    {
+      signal_detected = true;
+    }
     return 0;
   }
   PT_END(pt);
@@ -37,7 +43,12 @@ int digitalIn(struct pt* pt) {
 int digitalOut(struct pt* pt) {
   PT_BEGIN(pt);
   for(;;) {
-    if(sensor_input_state == 1 || sensor_input_value>sensor_threshold+sensor_threshold_margin)
+    if(signal_detected)
+    {
+      digitalWrite(DIGITAL_OUTPUT_PIN,HIGH);
+      signal_detected = false;
+    }
+    else if(sensor_input_value>sensor_threshold+sensor_threshold_margin)
     {
       digitalWrite(DIGITAL_OUTPUT_PIN,HIGH);
     }
@@ -58,8 +69,9 @@ int analogIn(struct pt* pt) {
   PT_BEGIN(pt);
   for(;;) 
   {
-    sensor_input_value = analogRead(ANALOG_INPUT_PIN_0);
-    sensor_threshold = analogRead(ANALOG_INPUT_PIN_7);
+    sensor_input_value = analogRead(ANALOG_INPUT_PIN_7);
+    sensor_threshold = 512;
+    //sensor_threshold = analogRead(ANALOG_INPUT_PIN_7);
     return 0;
   }
   PT_END(pt);
@@ -85,6 +97,8 @@ void setup() {
   PT_INIT(&ptDigitalOut);
   PT_INIT(&ptAnalogIn);
   PT_INIT(&ptAnalogOut);
+
+  Serial.begin(9600);
 
 }
 
