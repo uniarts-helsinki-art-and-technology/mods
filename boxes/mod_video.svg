@@ -125,7 +125,7 @@
 	<rect x="67.9" y="353.5" class="st6" width="48.3" height="46.1"/>
 </g>
 <text transform="matrix(1 0 0 1 428.8467 395.9726)" class="st3 st5">VIDEO</text>
-<text transform="matrix(1 0 0 1 489.7351 395.9724)" class="st3 st5">AUDIO</text>
+<text transform="matrix(1 0 0 1 490.0185 395.9724)" class="st3 st5">AUDIO</text>
 <g>
 	<rect x="237.3" y="465.7" class="st6" width="48.3" height="46.1"/>
 </g>
@@ -139,4 +139,5 @@
 <text transform="matrix(1 0 0 1 460.3315 337.4047)" class="st3 st5">LOOP</text>
 <circle class="st6" cx="444.2" cy="334.3" r="9.2"/>
 <path class="st7" d="M518.4,334.3"/>
+<text transform="matrix(1 0 0 1 242.2651 460.0763)" class="st3 st5">SIGNAL </text>
 </svg>
