@@ -6,7 +6,7 @@ READY
 	Sensor (for rpi pico + arduino) / Tuomo
 	Video (for rpi 3 & rpi 4) / Roberto
 	Gate: and (circuit:ic) / Tuomo
-	DC switch / Tuomo
+	DC switch (arduino) / Tuomo
 
 
 WORK IN PROGRESS
