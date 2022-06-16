@@ -11,16 +11,15 @@ from machine import PWM
 
 # SETUP PINS
 # TODO: Design general pin layout
-built_in_led = Pin(0, Pin.OUT) # pin 25 is built-in led
-state_signal = Pin(1, Pin.OUT) 
-
+built_in_led = Pin(25, Pin.OUT)  # pin 25 is built-in led
+state_signal = Pin(0, Pin.OUT)
 analog_out_pin = Pin(2)
 analog_out = PWM(analog_out_pin) # create the PWM object
-analog_out.freq(1000) # sets the frequency in Hz for the PWM cycle min 1Hz, max 1kHz
+analog_out.freq(1000)            # sets the frequency in Hz for the PWM cycle min 1Hz, max 1kHz
 
-sensor = ADC(27)               # pin 27 for analog signal input
-potentiometer = ADC(28)        # pin 28 for analog input
-trigger_pin = Pin(13, Pin.IN)  # 13 number pin is input
+sensor = ADC(27)                 # pin 27 for analog signal input
+potentiometer = ADC(28)          # pin 28 for analog input
+trigger_pin = Pin(13, Pin.IN)    # 13 number pin is input
 trigger_pin.init(trigger_pin.IN, trigger_pin.PULL_DOWN)
 signal_sent = False
     
@@ -29,6 +28,7 @@ def sendPulseSignal():
     built_in_led.on()
     time.sleep_ms(50) # TODO: decide the generic pulse width
     built_in_led.off()
+
 
 def sendStateSignal(_state):
     global state_signal
@@ -47,6 +47,12 @@ while True:
     threshold = potentiometer.read_u16()   # read potentiometer value as a raw analog value in the range 0-65535
     signal_value = sensor.read_u16()       # read sensor value
     sendAnalogSignal(signal_value)         # always forward analog value
+
+    if trigger_signal:
+        sendStateSignal(True)
+        sendPulseSignal()
+    else:
+        sendStateSignal(False)
     
     if signal_value > threshold+500:
         sendStateSignal(True)
