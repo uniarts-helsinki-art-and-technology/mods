@@ -4,3 +4,5 @@
 
 #ignore all hidden files
 *.DS_
+*.DS_Store
+**/.DS_Store
