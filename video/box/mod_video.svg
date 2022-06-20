@@ -62,7 +62,7 @@
 		h-17c-0.1,0-0.1,0.1-0.1,0.1v8.4h-16.7v-8.4c0-0.1-0.1-0.1-0.1-0.1h-17c-0.1,0-0.1,0.1-0.1,0.1v8.4h-16.7v-8.4
 		c0-0.1-0.1-0.1-0.1-0.1h-17c-0.1,0-0.1,0.1-0.1,0.1v8.4H83.8v-8.4c0-0.1-0.1-0.1-0.1-0.1h-17c-0.1,0-0.1,0.1-0.1,0.1v8.4H49.8v-8.4
 		c0-0.1-0.1-0.1-0.1-0.1H21.3h-8.5c-0.1,0-0.1,0.1-0.1,0.1v8.5V329c0,0.1,0.1,0.1,0.1,0.1h8.4v16.7h-8.4c-0.1,0-0.1,0.1-0.1,0.1v17
-		c0,0.1,0.1,0.1,0.1,0.1h8.4v16.7h-8.4c-0.1,0-0.1,0.1-0.1,0.1v19.8c0,0.1,0.1,0.1,0.1,0.1H21.3z"/>
+		c0,0.1,0.1,0.1,0.1,0.1h8.4v16.7h-8.4c-0.1,0-0.1,0.1-0.1,0.1v19.8c0,0.1,0.1,0.1,0.1,0.1L21.3,399.7L21.3,399.7z"/>
 </g>
 <g id="p-4">
 	<path class="st0" d="M21.3,287.5h28.2v8.4c0,0.1,0.1,0.1,0.1,0.1h17c0.1,0,0.1-0.1,0.1-0.1v-8.4h16.7v8.4c0,0.1,0.1,0.1,0.1,0.1h17
@@ -84,7 +84,6 @@
 </g>
 <g id="p-5">
 	<path class="st1" d="M458.8,287.2h-8.4V279h16.7v8.2H458.8z"/>
-	<path class="st1" d="M492.8,287.2h-8.4V279h16.7v8.2H492.8z"/>
 	<path class="st1" d="M526.8,287.2h-8.4V279h16.7v8.2H526.8z"/>
 	<path class="st1" d="M560.9,287.2h-8.4V279h16.7v8.2H560.9z"/>
 	<path class="st1" d="M594.9,287.2h-8.4V279h16.7v8.2H594.9z"/>
@@ -103,7 +102,6 @@
 	<path class="st1" d="M594.9,21h8.4v8.2h-16.7V21H594.9z"/>
 	<path class="st1" d="M560.9,21h8.4v8.2h-16.7V21H560.9z"/>
 	<path class="st1" d="M526.8,21h8.4v8.2h-16.7V21H526.8z"/>
-	<path class="st1" d="M492.8,21h8.4v8.2h-16.7V21H492.8z"/>
 	<path class="st1" d="M458.8,21h8.4v8.2h-16.7V21H458.8z"/>
 	<path class="st1" d="M413.6,69.1v-8.4h8.2v16.7h-8.2V69.1z"/>
 	<path class="st1" d="M413.6,103.1v-8.4h8.2v16.7h-8.2V103.1z"/>
@@ -124,20 +122,22 @@
 <g>
 	<rect x="67.9" y="353.5" class="st6" width="48.3" height="46.1"/>
 </g>
-<text transform="matrix(1 0 0 1 428.8467 395.9726)" class="st3 st5">VIDEO</text>
+<text transform="matrix(1 0 0 1 428.8467 395.9727)" class="st3 st5">VIDEO</text>
 <text transform="matrix(1 0 0 1 490.0185 395.9724)" class="st3 st5">AUDIO</text>
+<rect x="233" y="385.5" class="st6" width="39.7" height="8.5"/>
+<rect x="369" y="365.7" class="st2" width="31.2" height="19.9"/>
+<rect x="419.1" y="357.3" class="st2" width="52.4" height="28.2"/>
+<text transform="matrix(1 0 0 1 366.0957 395.9726)" class="st3 st5">POWER</text>
+<text transform="matrix(1 0 0 1 366.3779 337.4037)" class="st3 st5">PLAY</text>
+<text transform="matrix(1 0 0 1 425.3315 337.4047)" class="st3 st5">LOOP</text>
+<circle class="st6" cx="409.2" cy="334.3" r="9.2"/>
+<path class="st7" d="M518.4,334.3"/>
+<polygon class="st6" points="77.9,449.9 77.9,458.4 21.2,458.4 21.2,496.7 175.7,496.7 175.7,449.9 "/>
+<text transform="matrix(1 0 0 1 35.1609 443.7643)" class="st3 st5">SYNC</text>
+<text transform="matrix(1 0 0 1 84.2141 443.7644)" class="st3 st5">USB x 4</text>
+<circle class="st2" cx="506.2" cy="371.4" r="14.2"/>
+<text transform="matrix(1 0 0 1 203.4286 488.938)" class="st3 st4">OUT</text>
 <g>
 	<rect x="237.3" y="465.7" class="st6" width="48.3" height="46.1"/>
 </g>
-<rect x="233" y="391.1" class="st6" width="39.7" height="8.5"/>
-<rect x="369" y="365.7" class="st2" width="31.2" height="19.9"/>
-<rect x="419.1" y="357.3" class="st2" width="52.4" height="28.2"/>
-<rect x="492.1" y="357.2" class="st2" width="28.3" height="28.3"/>
-<rect x="21.3" y="450.9" class="st6" width="150.2" height="46.8"/>
-<text transform="matrix(1 0 0 1 366.0957 395.9725)" class="st3 st5">POWER</text>
-<text transform="matrix(1 0 0 1 401.3779 337.4037)" class="st3 st5">PLAY</text>
-<text transform="matrix(1 0 0 1 460.3315 337.4047)" class="st3 st5">LOOP</text>
-<circle class="st6" cx="444.2" cy="334.3" r="9.2"/>
-<path class="st7" d="M518.4,334.3"/>
-<text transform="matrix(1 0 0 1 242.2651 460.0763)" class="st3 st5">SIGNAL </text>
 </svg>

@@ -84,7 +84,6 @@
 </g>
 <g id="p-5">
 	<path class="st1" d="M458.8,287.2h-8.4V279h16.7v8.2H458.8z"/>
-	<path class="st1" d="M492.8,287.2h-8.4V279h16.7v8.2H492.8z"/>
 	<path class="st1" d="M526.8,287.2h-8.4V279h16.7v8.2H526.8z"/>
 	<path class="st1" d="M560.9,287.2h-8.4V279h16.7v8.2H560.9z"/>
 	<path class="st1" d="M594.9,287.2h-8.4V279h16.7v8.2H594.9z"/>
@@ -103,7 +102,6 @@
 	<path class="st1" d="M594.9,21h8.4v8.2h-16.7V21H594.9z"/>
 	<path class="st1" d="M560.9,21h8.4v8.2h-16.7V21H560.9z"/>
 	<path class="st1" d="M526.8,21h8.4v8.2h-16.7V21H526.8z"/>
-	<path class="st1" d="M492.8,21h8.4v8.2h-16.7V21H492.8z"/>
 	<path class="st1" d="M458.8,21h8.4v8.2h-16.7V21H458.8z"/>
 	<path class="st1" d="M413.6,69.1v-8.4h8.2v16.7h-8.2V69.1z"/>
 	<path class="st1" d="M413.6,103.1v-8.4h8.2v16.7h-8.2V103.1z"/>
@@ -124,18 +122,12 @@
 <text transform="matrix(6.123234e-17 -1 1 6.123234e-17 768.1055 206.2285)" class="st3 st5">KUVA | ART&amp;TECH | 2022</text>
 <circle class="st6" cx="561.7" cy="352.9" r="17.7"/>
 <text transform="matrix(1 0 0 1 543.5019 382.9002)" class="st3 st5">POWER</text>
-<g>
-	<rect x="67.9" y="353.5" class="st7" width="48.3" height="46.1"/>
-	<rect x="135.6" y="353.5" class="st7" width="48.3" height="46.1"/>
-</g>
+<rect x="67.9" y="353.5" class="st7" width="48.3" height="46.1"/>
 <circle class="st7" cx="435.7" cy="352.9" r="9.2"/>
 <text transform="matrix(1 0 0 1 425.5967 382.8997)" class="st3 st5">POT</text>
 <circle class="st7" cx="388.9" cy="352.9" r="9.2"/>
 <text transform="matrix(1 0 0 1 369.0114 382.8997)" class="st3 st5">SWITCH</text>
 <circle class="st7" cx="484.8" cy="352.9" r="9.2"/>
 <text transform="matrix(1 0 0 1 464.9744 382.8997)" class="st3 st5">BUTTON </text>
-<g>
-	<rect x="169.6" y="465.7" class="st7" width="48.3" height="46.1"/>
-	<rect x="237.3" y="465.7" class="st7" width="48.3" height="46.1"/>
-</g>
+<rect x="237.3" y="465.7" class="st7" width="48.3" height="46.1"/>
 </svg>

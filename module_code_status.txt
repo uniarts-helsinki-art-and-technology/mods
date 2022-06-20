@@ -7,11 +7,11 @@ READY
 	Video (for rpi 3 & rpi 4) / Roberto
 	Gate: and (circuit:ic) / Tuomo
 	DC switch (arduino) / Tuomo
+	Envelope (for rpi pico) / Roberto
 
 
 WORK IN PROGRESS
 	Counter/adder (Alex)
-	Time control (Roberto)
 
 WAITING LIST
 	AC switch
